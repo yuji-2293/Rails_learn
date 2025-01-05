@@ -9,8 +9,7 @@ module.exports = {
     './app/javascript/**/*.js'
   ],
   plugins: [
-    require('daisyui'),
-    require('@tailwindcss/typography')
+    require('daisyui','@tailwindcss/typography'),
   ],
 
 }

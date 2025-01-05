@@ -3,6 +3,9 @@
 // ./bin/rails generate stimulus controllerName
 
 import { application } from "./application"
+// 背景色をクリックイベントで変更するcontroller
+import HighlightController from "./highlight_controller";
+application.register("highlight", HighlightController);
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
