@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-  root "forms#index"
+  root "add_fields#index"
   resources :tops, only: [:index, :create]
   resources :comments, only: [:index, :create]
 

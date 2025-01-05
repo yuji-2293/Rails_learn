@@ -12,5 +12,9 @@ application.register("highlight", HighlightController);
 import PostController from "./post_controller";
 application.register("post", PostController);
 
+//複数入力のフィールドを動的に追加するcontroller
+import AddFieldsController from "./add-fields_controller";
+application.register("add-fields", AddFieldsController);
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)

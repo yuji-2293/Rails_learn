@@ -1,0 +1,14 @@
+<div data-controller="add-fields">
+    <ul data-add-fields-target="fieldList">
+
+    </ul>
+
+    <template data-add-fields-target="template">
+        <li class="field">
+            <input type="text" name="fields[]" placeholder="ここに入力">
+            <button type="button" data-action="click->add-fields#removeField">Remove</button>
+        </li>
+    </template>
+
+    <button type="button" data-action="click->add-fields#addField">Add Field</button>
+</div>
