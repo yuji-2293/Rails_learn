@@ -4,28 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HotWire_learn</title>
-    <%= javascript_include_tag "application", "data-turbo-track": "reload" %>
-
 </head>
 <body>
-    <h1>Choose Your Mood Color</h1>
-<%# turboフレームを使用 %>
-    <turbo-frame id="color-display">
-        <p>No color selected</p>
-    </turbo-frame>
+    <article class="prose">
+        <h1>Choose Your Mood Color</h1>
+        <%# turboフレームを使用 %>
+        <turbo-frame id="color-display" data-turbo-cache="false">
+            <p>No color selected</p>
+        </turbo-frame>
+    </article>
 
-    <form action="/colors" method="post" data-turbo-frame="color-display">
-        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-        <select name="color" required>
-            <option value="red">赤</option>
-            <option value="blue">青</option>
-            <option value="green">緑</option>
-        </select>
-        <button type="submit">Submit</button>
-    </form>
+<%= render 'shared/form'%>
+
 
 
 </body>
 
 </html>
-

@@ -1,4 +1,7 @@
 module.exports = {
+  corePlugins: {
+    preflight: false, // TailwindのリセットCSSを無効化
+  },
   content: [
     './app/views/**/*.html.erb',
     './app/helpers/**/*.rb',
@@ -7,5 +10,7 @@ module.exports = {
   ],
   plugins: [
     require('daisyui'),
+    require('@tailwindcss/typography')
   ],
+
 }

@@ -1,0 +1,4 @@
+<%= form_with url: tops_path, method: :post, data: { turbo_frame: "color-display" } do |f| %>
+  <%= f.select :color, options_for_select([['赤', 'red'], ['青', 'blue'], ['緑', 'green']]) %>
+  <%= f.submit "Submit" %>
+<% end %>
