@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-  root "add_fields#index"
+  root "tasks#index"
   resources :tops, only: [:index, :create]
   resources :comments, only: [:index, :create]
+  resources :tasks, only: [:index, :create]
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
   # Can be used by load balancers and uptime monitors to verify that the app is live.

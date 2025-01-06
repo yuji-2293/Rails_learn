@@ -16,5 +16,9 @@ application.register("post", PostController);
 import AddFieldsController from "./add-fields_controller";
 application.register("add-fields", AddFieldsController);
 
+//Railsへ非同期でformを投げるcontroller
+import TaskFormController from "./task_form_controller";
+application.register("task-form", TaskFormController);
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
