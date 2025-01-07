@@ -22,3 +22,9 @@ application.register("task-form", TaskFormController);
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+import MemoFormController from "./memo_form_controller";
+application.register("memo-form", MemoFormController);
+
+import ToggleController from "./toggle_controller";
+application.register("toggle", ToggleController);

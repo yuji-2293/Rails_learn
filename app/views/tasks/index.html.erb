@@ -4,10 +4,9 @@
         <input type="text" name="task[name]" placeholder="タスクを入力" required>
         <button type="submit">タスクを追加</button>
     </form>
-    <turbo-frame id="task-list">
-        <ul>
-            <%= render partial: 'tasks/task', collection: @tasks, as: :task %>
-        </ul>
-    </turbo-frame>
 
 </div>
+
+        <ul id="task-list">
+            <%= render @tasks%>
+        </ul>
