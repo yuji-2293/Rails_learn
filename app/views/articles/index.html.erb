@@ -3,12 +3,8 @@
 <div data-controller="article-fetcher">
   <button data-action="click->article-fetcher#fetchData">Load Articles</button>
 </div>
-
-  <ul  id="article-list">
-  <%= render @articles%>
-  <%# ここにAPIからのデータが入る %>
+<turbo-frame  id="article-list">
+  <ul>
+  <%= render partial: 'article', collection: @articles, as: :article %>
   </ul>
-
-<div id="article-list">
-
-</div>
+</turbo-frame>

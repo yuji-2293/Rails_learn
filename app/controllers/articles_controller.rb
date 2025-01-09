@@ -7,7 +7,7 @@ class ArticlesController < ApplicationController
   def fetch_data
     response = Net::HTTP.get(URI("https://jsonplaceholder.typicode.com/posts"))
     @articles = JSON.parse(response)
-
+    
     render  turbo_stream: turbo_stream.append(
       "article-list",
       partial: 'article',

@@ -1,4 +1,3 @@
-<div data-controller="memo-form">
   <form data-action="submit->memo-form#submit" data-memo-form-target="form" method="post" action="/memos">
     <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
     <input type="text" name="memo[content]" placeholder="メモを入力" required>
@@ -8,4 +7,4 @@
   <ul id="memo-list">
     <%= render @memos %>
   </ul>
-</div>
+
