@@ -28,3 +28,6 @@ application.register("memo-form", MemoFormController);
 
 import ToggleController from "./toggle_controller";
 application.register("toggle", ToggleController);
+
+import ArticleFetcherController from "./article_fetcher_controller";
+application.register("article-fetcher", ArticleFetcherController);

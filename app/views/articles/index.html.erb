@@ -1,0 +1,14 @@
+<h1>Articles</h1>
+
+<div data-controller="article-fetcher">
+  <button data-action="click->article-fetcher#fetchData">Load Articles</button>
+</div>
+
+  <ul  id="article-list">
+  <%= render @articles%>
+  <%# ここにAPIからのデータが入る %>
+  </ul>
+
+<div id="article-list">
+
+</div>

@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-  root "memos#index"
+  root "articles#index"
+  resources :articles, only: %i[index] do
+    collection do
+      get :fetch_data
+    end
+  end
   resources :tops, only: [:index, :create]
   resources :comments, only: [:index, :create]
   resources :tasks, only: [:index, :create]
