@@ -8,10 +8,6 @@ export default class extends Controller {
                     "Accept": "text/vnd.turbo-stream.html",
                 },
             });
-            if (!response.ok) {
-                throw new Error("fetch 失敗！！");
-            }
-            console.log("fetch 成功!!");
-            
+
         }
     }
